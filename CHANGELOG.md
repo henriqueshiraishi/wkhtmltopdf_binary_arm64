@@ -2,6 +2,10 @@
 
 - Setup of Github action automation for Linux/MacOS builds
 
+# 0.12.6.8
+
+Syntax error fixed
+
 # 0.12.6.7
 
 Add support for ARM architecture

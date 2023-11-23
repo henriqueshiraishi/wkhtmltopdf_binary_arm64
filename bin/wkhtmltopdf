@@ -54,6 +54,7 @@ suffix = case RbConfig::CONFIG['host_os']
             architecture = 'arm64'
           else
             architecture = host_cpu == 'x86_64' ? 'amd64' : 'i386'
+          end
 
            "#{os}_#{architecture}"
          when /darwin/
