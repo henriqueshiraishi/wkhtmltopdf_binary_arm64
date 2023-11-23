@@ -2,6 +2,10 @@
 
 - Setup of Github action automation for Linux/MacOS builds
 
+# 0.12.6.7
+
+Add support for ARM architecture
+
 # 0.12.6.6
 
 Add support for Ubuntu 22.04

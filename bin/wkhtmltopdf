@@ -49,7 +49,11 @@ suffix = case RbConfig::CONFIG['host_os']
            os = 'archlinux' if os.start_with?('arch_') ||
                                os.start_with?('manjaro_')
 
-           architecture = RbConfig::CONFIG['host_cpu'] == 'x86_64' ? 'amd64' : 'i386'
+          host_cpu = RbConfig::CONFIG['host_cpu']
+          if %w[arm64 aarch64 arch64].include?(host_cpu)
+            architecture = 'arm64'
+          else
+            architecture = host_cpu == 'x86_64' ? 'amd64' : 'i386'
 
            "#{os}_#{architecture}"
          when /darwin/
