@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rubygems/package_task'
 require 'rake/testtask'
 
-spec = eval(File.new("wkhtmltopdf-binary.gemspec").readlines.join("\n"))
+spec = eval(File.new("wkhtmltopdf-binary-arm64.gemspec").readlines.join("\n"))
 
 Gem::PackageTask.new(spec) do |pkg|
   pkg.need_tar = true
