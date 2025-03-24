@@ -2,6 +2,10 @@
 
 - Setup of Github action automation for Linux/MacOS builds
 
+# 0.12.7.0
+
+Add support to Ubuntu 24.04
+
 # 0.12.6.8
 
 Syntax error fixed
